@@ -55,7 +55,8 @@ for z in measurements:
   kf.predict()
   kf.update (np.array([z]))
   est_states.append(kf.x)
-
+  ```
+```
 import matplotlib.pyplot as plt
 plt.plot([s[0] for s in true_states], label='true')
 plt.plot([s[0] for s in est_states], label='estimate')
